@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한적십자사 헌혈본부 프로그램 소개</title>
+    <style>
+        body {
+            font-family: Pretendard, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #c53030;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        main {
+            flex: 1;
+            padding: 0px;
+        }
+        .section-title {
+            text-align: center;
+            margin: 20px 0 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 220px; /* 동일한 가로 길이 설정 */
+            height: 150px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card img {
+            width: 100%;
+            height: 100px;
+            object-fit: contain; /* 수정된 부분 */
+            border-radius: 10px;
+            margin-bottom: 10px;
+            /* background-color: #f7f7f7; 여백 처리 */
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+        .card h3 {
+            margin: 10px 0;
+            color: #c53030;
+        }
+        .spacer {
+            margin-top: 40px; /* "헌혈 관련 데이터" 섹션 간격 */
+        }
+        footer {
+            text-align: center;
+            padding: 0px;
+            background-color: #e2e2e2;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Z13_PORTFOLIO</h1>
+    <p style="font-size: 18px;">헌혈기관에 저장되는 대량의 데이터를 간편하고 직관적으로 조회할 수 있는 프로그램입니다.</p>
+</header>
+
+<main>
+    <!-- 마스터 데이터 섹션 -->
+    <br>
+    <div class="section-title">마스터 데이터</div>
+    <div class="card-container">
+        <div class="card">
+            <img src="donor.jpg" alt="헌혈자 이미지">
+            <h3>헌혈자</h3>
+        </div>
+        <div class="card">
+            <img src="nurse.jpg" alt="간호사 이미지">
+            <h3>간호사</h3>
+        </div>
+        <div class="card">
+            <img src="meddv.jpg" alt="의료기기 이미지">
+            <h3>의료기기</h3>
+        </div>
+        <div class="card">
+            <img src="suppl.jpg" alt="소모품 이미지">
+            <h3>소모품</h3>
+        </div>
+        <div class="card">
+            <img src="dgift.jpg" alt="헌혈기념품 이미지">
+            <h3>헌혈기념품</h3>
+        </div>
+    </div>
+
+    <!-- 간격 추가 -->
+    <div class="spacer"></div>
+
+    <!-- 헌혈 관련 데이터 섹션 -->
+    <div class="section-title">헌혈 관련 데이터</div>
+    <div class="card-container">
+        <div class="card">
+            <img src="medcu.jpg" alt="건강문진 기록 이미지">
+            <h3>건강문진 기록</h3>
+        </div>
+        <div class="card">
+            <img src="dntrc.jpg" alt="헌혈 수행 이력 이미지">
+            <h3>헌혈 수행 이력</h3>
+        </div>
+        <div class="card">
+            <img src="bpack.jpg" alt="혈액팩 재고 이미지">
+            <h3>혈액팩 재고</h3>
+        </div>
+        <div class="card">
+            <img src="btest.jpg" alt="혈액검사 결과 이미지">
+            <h3>혈액검사 결과</h3>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p><b>ABAP Certification Project</b>&nbsp;(22682009 박율)</p>
+</footer>
+
+</body>
+</html>
