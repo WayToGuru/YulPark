@@ -14,12 +14,26 @@
             flex-direction: column;
             min-height: 100vh;
         }
-        header {
+        /* header {
             background-color: #c53030;
             color: white;
             text-align: center;
-            padding: 10px;
-        }
+            padding: 5px;
+        } */
+        header {
+        background-color: #c53030;
+        color: white;
+        text-align: center;
+        padding: 10px 5px; /* 위아래 패딩 축소 */
+    }
+    header h1 {
+        margin: 5px 0; /* 제목의 상하 여백 축소 */
+        font-size: 32px; /* 폰트 크기 약간 축소 */
+    }
+    header p {
+        margin: 10px 0; /* 설명 텍스트의 상하 여백 축소 */
+        font-size: 16px; /* 설명 텍스트 크기 약간 축소 */
+    }
         main {
             flex: 1;
             padding: 0px;
@@ -75,7 +89,7 @@
             text-align: center;
             padding: 0px;
             background-color: #e2e2e2;
-            margin-bottom: 60px;
+            margin-bottom: 100px;
         }
     </style>
 </head>
